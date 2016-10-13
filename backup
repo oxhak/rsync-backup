@@ -1,6 +1,6 @@
 #!/bin/sh
 # Rsync Backup Script
-# Put this file where you want, I put it into my /usr/bin/
+# Backup your whole system into a folder
 #
 # Ox HaK
 # https://oxhak.fr
