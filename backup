@@ -11,7 +11,7 @@
 DESTINATION="/backup"
 
 #Exclude files list, see backup.lst in this repos
-EXCLUDE="/usr/bin/backup.lst"
+EXCLUDE="backup.lst"
 
 #Mount the hdd for destination backup
 sudo mount /dev/sdb1 /backup;
