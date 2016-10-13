@@ -1,0 +1,14 @@
+# Include
+
+# Exclude
+- /backup/*
+- /var/log/journal/*
+- /dev/*
+- /proc/*
+- /sys/*
+- /run/*
+- /tmp/*
+- /run/media/*
+- lost+found/
+- /mnt/*
+- /var/lib/pacman/sync/*
