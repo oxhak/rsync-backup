@@ -11,7 +11,7 @@
 # ! do not miss to add an exclude to this destination in backup.lst ! - /backup/*
 DESTINATION="/backup"
 
-#Exclude files list, see backup.lst in this repos
+#Exclude file list, see backup.lst in this repos
 EXCLUDE="backup.lst"
 
 #Mount the hdd for destination backup
