@@ -1,2 +1,2 @@
 # rsync-backup
-Backup your whole system or dedicated server
+Backup Your Whole System Into A Folder
