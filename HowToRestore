@@ -1,5 +1,6 @@
 #!/bin/sh
 
-$DESTINATION="/"
 $SOURCE="/backup"
+$DESTINATION="/"
+
 sudo rsync -aAXvH --ignore-errors --numeric-ids --delete-excluded --progress $SOURCE $DESTINATION;
