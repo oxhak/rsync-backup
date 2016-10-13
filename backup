@@ -7,7 +7,8 @@
 # https://twitter.com/OxHaK
 # https://keybase.io/oxhak
 
-#Destination of the backup, ! do not put / at the end !
+#Destination of the backup, ! do not put / at the end ! 
+# ! do not miss to add an exclude to this destination in backup.lst ! - /backup/*
 DESTINATION="/backup"
 
 #Exclude files list, see backup.lst in this repos
