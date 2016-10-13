@@ -1,5 +1,5 @@
 # rsync-backup
-Backup Your Whole System Into A Folder
+Backup Your Whole System Into A Folder.
 
 Maintains the rights and properties of files when copying.
 
