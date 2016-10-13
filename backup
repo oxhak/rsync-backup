@@ -1,0 +1,32 @@
+#!/bin/sh
+# Rsync Backup Script
+# Put this file where you want, I put it into my /usr/bin/
+#
+# By Ox HaK
+# https://oxhak.fr
+# https://twitter.com/OxHaK
+# https://keybase.io/oxhak
+
+#Destination of the backup, ! do not put / at the end !
+DESTINATION="/backup"
+
+#Exclude files list, see backup.lst in this repos
+EXCLUDE="/usr/bin/backup.lst"
+
+#Mount the hdd for destination backup
+sudo mount /dev/sdb1 /backup;
+
+#Do the backup
+    sudo rsync -aAXvH --ignore-errors --numeric-ids --delete-excluded --progress --exclude-from=$EXCLUDE / $DESTINATION;
+    
+#Write the last backup into a file
+    touch $DESTINATION/BACKUP;
+    echo "Backup done at $(date +%d/%m/%Y) $(date +%Hh%M)." >> $DESTINATION/BACKUP;
+
+sleep 1;
+# umount the hdd for destination backup
+sudo umount /dev/sdb1 &&
+
+echo "---------------------------";
+echo "Backup done!";
+echo "---------------------------";
